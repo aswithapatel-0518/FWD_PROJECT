@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Resume Builder</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(120deg, #f6d365, #fda085);
+    }
+
+    .login-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #007acc;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    input {
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #007acc;
+      color: #fff;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #005f99;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <!-- When submitted, this form will redirect to index.html -->
+    <form action="index.html" method="GET">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
